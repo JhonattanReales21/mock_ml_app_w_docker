@@ -1,0 +1,53 @@
+MOCK_ML_APP_W_DOCKER - Project Structure
+=========================================
+
+📁 Root Directory
+├── 📄 README.md                    Documentación completa (8.8 KB)
+├── 📄 QUICK_START.md              Guía de inicio rápido
+├── 📄 PROJECT_SUMMARY.md          Resumen técnico del proyecto
+├── 📄 app.py                      Aplicación Streamlit principal (133 líneas)
+├── 📄 requirements.txt            Dependencias Python
+├── 📄 Dockerfile                  Configuración Docker
+├── 📄 docker-compose.yml          Orquestación Docker
+├── 📄 .dockerignore              Exclusiones Docker build
+├── 📄 .gitignore                 Exclusiones Git
+├── 🔧 check_env.sh               Script verificación entorno
+├── 🔧 test_modules.py            Script prueba módulos
+│
+├── 📁 source/                     Módulos de Machine Learning
+│   ├── 📄 __init__.py            
+│   ├── 📄 image_processing.py    Procesamiento imágenes médicas (160 líneas)
+│   ├── 📄 text_processing.py     Análisis texto médico (189 líneas)
+│   ├── 📄 cnn_models.py          Arquitecturas CNN (216 líneas)
+│   ├── 📄 training.py            Pipeline entrenamiento (246 líneas)
+│   └── 📄 inference.py           Sistema inferencia (232 líneas)
+│
+└── 📁 notebooks/                  Notebooks Jupyter (vacío, listo para usar)
+    └── .gitkeep
+
+ESTADÍSTICAS DEL PROYECTO
+==========================
+- Total líneas de código Python: ~1,260
+- Módulos Python: 7
+- Scripts de utilidad: 2
+- Archivos de documentación: 3
+- Configuración Docker: 2 archivos
+
+CARACTERÍSTICAS PRINCIPALES
+============================
+✅ Aplicación Streamlit interactiva
+✅ 10 preguntas para profesionales de salud
+✅ Export de respuestas a CSV
+✅ Módulos ML completos y funcionales
+✅ Dockerfile optimizado
+✅ Docker Compose para deployment fácil
+✅ Documentación completa
+✅ Scripts de verificación y testing
+✅ Sin vulnerabilidades de seguridad (CodeQL ✓)
+
+MÉTODOS DE DEPLOYMENT
+======================
+1. Python Local: streamlit run app.py
+2. Docker: docker build + docker run
+3. Docker Compose: docker-compose up
+
