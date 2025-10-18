@@ -154,6 +154,43 @@ docker rm health-app
 docker rmi health-questionnaire-app
 ```
 
+### Opción 3: Ejecución con Docker Compose (Más Simple)
+
+Docker Compose simplifica la gestión de contenedores con un solo comando.
+
+#### Pasos:
+
+1. **Clonar el repositorio** (si aún no lo ha hecho)
+   ```bash
+   git clone https://github.com/JhonattanReales21/mock_ml_app_w_docker.git
+   cd mock_ml_app_w_docker
+   ```
+
+2. **Iniciar la aplicación**
+   ```bash
+   docker-compose up
+   ```
+   
+   Para ejecutar en segundo plano:
+   ```bash
+   docker-compose up -d
+   ```
+
+3. **Detener la aplicación**
+   ```bash
+   docker-compose down
+   ```
+
+4. **Ver logs**
+   ```bash
+   docker-compose logs -f
+   ```
+
+5. **Reconstruir y reiniciar**
+   ```bash
+   docker-compose up --build
+   ```
+
 ## 📝 Uso de la Aplicación
 
 1. **Completar el Cuestionario**: Responda las 10 preguntas del formulario
